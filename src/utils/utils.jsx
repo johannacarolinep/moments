@@ -32,9 +32,7 @@ export const followHelper = (profile, clickedProfile, following_id) => {
         following_count: profile.following_count + 1
     }
     : // not the clicked profile, nor the logged in user's profile
-    {
-        profile
-    };
+    profile;
 }
 
 export const unfollowHelper = (profile, clickedProfile) => {
@@ -52,7 +50,5 @@ export const unfollowHelper = (profile, clickedProfile) => {
         following_count: profile.following_count - 1
     }
     : // not the clicked profile, nor the logged in user's profile
-    {
-        profile
-    };
+    profile;
 }
