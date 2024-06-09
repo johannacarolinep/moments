@@ -4,7 +4,7 @@ import btnStyles from "../../styles/Button.module.css";
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import Avatar from '../../components/Avatar';
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 const Profile = (props) => {
     const {profile, mobile, imageSize=55} = props;
